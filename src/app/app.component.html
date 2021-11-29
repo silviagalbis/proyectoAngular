@@ -1,0 +1,10 @@
+<titulo juego="{{ juego }}"></titulo>
+<manos
+  (clickManoIzq)="clickManoIzq()"
+  (clickManoDch)="clickManoDch()"
+  [manoIzq]="manoIzq"
+  [manoDch]="manoDch"
+></manos>
+<marcador [ptojugador]="ptojugador" [ptomaquina]="ptomaquina"></marcador>
+<p>{{ textpista }}</p>
+<botones (pista)="showPista()" (reiniciar)="reiniciar()"></botones>
